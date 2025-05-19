@@ -1,0 +1,44 @@
+/* Perus tyylit */
+body {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Tuotekortit */
+.product-card {
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-img {
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Lomakkeet */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.alert {
+    margin-bottom: 20px;
+}
+
+/* Responsiivisuus */
+@media (max-width: 768px) {
+    .product-card {
+        margin-bottom: 20px;
+    }
+}
